@@ -46,7 +46,7 @@ function decryptEmail(encoded) {
 
 document.addEventListener('DOMContentLoaded', function () {
 	// 使用自定义文本
-	document.getElementById('description').innerHTML = "我是Sun Boy，一名基层工作者，心中有无限想法却无法实现。<br/> -「<strong>爱好三角洲、乒乓球、摄影、旅行</strong>」-";
+	document.getElementById('description').innerHTML = "我是Sun Boy，一名基层工作者，心中有无限想法却无法实现。<br/>「<strong>爱好三角洲、乒乓球、摄影、旅行</strong>」";
 
 	var iUpElements = document.querySelectorAll(".iUp");
 	iUpElements.forEach(function (element) {
