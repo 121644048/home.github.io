@@ -127,6 +127,17 @@
         <img src="./assets/img/wechat.jpg" alt="WeChat" style="max-width: 300px; max-height: 300px; border-radius: 10px;" onclick="event.stopPropagation()">
     </div>
     <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const newBingApi = 'https://bing.liushen.fun/api/random?redirect=true';
+  const backgroundContainer = document.querySelector('.panel-cover--overlay');
+  if (backgroundContainer) {
+    backgroundContainer.style.backgroundImage = `url(${newBingApi})`;
+    backgroundContainer.style.backgroundSize = 'cover';
+    backgroundContainer.style.backgroundPosition = 'center center';
+    backgroundContainer.style.backgroundRepeat = 'no-repeat';
+  }
+});
+</script>
 </body>
 </html>
